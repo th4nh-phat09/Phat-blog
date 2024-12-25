@@ -4,9 +4,9 @@ import express from 'express';
 const routes = express.Router();
 
 // [GET /news/:slug]
-routes.use('/:slug', newController.show);
+routes.get('/:slug', newController.show);
 
 // [GET /news]
-routes.use('/', newController.index);
+routes.get('/', newController.index);
 
 export default routes;

@@ -3,9 +3,9 @@ import { siteController } from '../app/controllers/sitesController.js';
 var router = express.Router();
 
 //[GET] /search
-router.use('/search', siteController.search);
+router.get('/search', siteController.search);
 
 //[GET] /
-router.use('/', siteController.home);
+router.get('/', siteController.home);
 
 export default router;

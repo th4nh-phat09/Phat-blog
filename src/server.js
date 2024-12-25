@@ -4,6 +4,11 @@ import { engine } from 'express-handlebars';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import route from './routes/index.js';
+import db from './config/db/index.js';
+
+//connect db
+db.connect();
+
 // Init __dirname
 const __filename = fileURLToPath(import.meta.url); // Lấy đường dẫn file hiện tại
 const __dirname = path.dirname(__filename); // Lấy thư mục chứa file hiện tại src
