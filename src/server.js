@@ -35,6 +35,6 @@ route(app);
 // Middleware for logging requests
 //app.use(morgan('combined'))
 
-                         app.listen(port, () => {
+app.listen(port, () => {
     console.log('Server is running on port 3000');
 });
