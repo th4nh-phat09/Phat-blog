@@ -1,15 +1,10 @@
-
-class NewConntroller{
-    index(req, res){
+class NewConntroller {
+    index(req, res) {
         res.render('new');
-    };
+    }
 
-    show(req, res){
+    show(req, res) {
         res.send('NEW DETAILSS!!!!!');
-    };
-
-
+    }
 }
 export const newController = new NewConntroller();
-
-

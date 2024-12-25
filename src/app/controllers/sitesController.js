@@ -1,4 +1,4 @@
-class SiteController{
+class SiteController {
     home(req, res) {
         res.render('home');
     }
@@ -8,4 +8,4 @@ class SiteController{
     }
 }
 
-export const siteController =new SiteController();
+export const siteController = new SiteController();
